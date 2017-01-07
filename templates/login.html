@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="content">
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#login_user').submit(function(event){
+        event.preventDefault();
+
+        var uname=document.getElementById( "login_username_input" );
+        var passw=document.getElementById( "login_password_input" );
+
+        var newd = {
+          username: uname.value,
+          password: passw.value
+        }
+
+        $.ajax({
+          type: "POST",
+          contentType: "application/json; charset=UTF-8",
+          data: JSON.stringify(newd),
+          url: "{{url_for('api.loginApi')}}",
+          success: function(data) {
+            console.log("Worked!");
+            if(window.location.href.indexOf("albumid") > -1){
+              // startingIndex = window.location.href.indexOf("url=") + 4
+              window.location.replace(document.referrer);
+            }
+            else if(window.location.href.indexOf("picid") > -1){
+              window.location.replace(document.referrer);
+            }
+            else if(window.location.href.indexOf("username") > -1){
+              window.location.replace(document.referrer);
+            }
+            else{
+              window.location.replace("/ij1dz07o/p3");
+            }
+          },
+          error: function(error) {
+            console.log("Didn't work... :c");
+          }
+        });
+     });
+   });
+
+  </script>
+
+</div>
+<form id="login_user" method="post">
+   <label>Username:</label><input id="login_username_input" type="text" name="username"><br>
+   <label>Password:</label><input id="login_password_input" type="password" name="password"><br>
+   <input id="login_submit" type="submit" value="Submit"><br>
+</form>
+{% endblock %}

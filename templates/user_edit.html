@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="content">
+  <script type="text/javascript">
+    function populate(){
+
+    }
+
+    $(document).ready(function () {
+      $.ajax({
+        type: "GET",
+        contentType: "application/json; charset=UTF-8",
+        data: {},
+        url: "{{url_for('api.userApi')}}",
+        success: function(data) {
+          document.getElementById( "update_firstname_input" ).value = data['firstname'];
+          document.getElementById( "update_lastname_input" ).value = data['lastname'];
+          document.getElementById( "update_email_input" ).value = data['email'];
+        },
+        error: function(error) {
+          console.log("Didn't work... :c");
+        }
+      });
+
+      $('#update_user').submit(function(event){
+        event.preventDefault();
+
+        var uname = document.getElementById("update_username_input");
+        var fname=document.getElementById("update_firstname_input");
+        var lname=document.getElementById("update_lastname_input");
+        var passw1=document.getElementById("update_password1_input");
+        var passw2=document.getElementById("update_password2_input");
+        var emailin=document.getElementById("update_email_input");
+
+        //VALIDATION CHECKS
+        error = false;
+        errors = [];
+        passcheck = true;
+        if (passw1.value.length == 0 && passw2.value.length == 0) {
+          passcheck = false;
+        }
+        if (uname.length < 3){
+          error = true;
+          errors.push("Usernames must be at least 3 characters long");
+        }
+        pattern = new RegExp("[A-Za-z0-9\_]");
+        if (!pattern.test(uname.value)){
+          error = true;
+          errors.push("Usernames may only contain letters, digits and underscores");
+        }
+        if (passcheck && passw1.length < 8 ){
+          error = true;
+          errors.push("Passwords must be at least 8 characters long");
+        }
+        if (passcheck && !(/\d/.test(passw1.value) && /[a-zA-Z]/.test(passw1.value))) {
+          error = true;
+          errors.push("Passwords must contain at least one letter and one number");
+        }
+        if (passcheck && (/\W/.test(passw1.value))){
+          error = true;
+          errors.push("Passwords may only contain letters, digits and underscores")
+        }
+        if (passcheck && (passw1.value != passw2.value)) {
+          error = true;
+          errors.push("Passwords do not match")
+        }
+        var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        if (!re.test(emailin.value)){
+          error = true;
+          errors.push("Email address must be valid")
+        }
+        if (uname.length > 20) {
+          error = true;
+          errors.push("Username must be no longer than 20 characters")
+        }
+        if (fname.length > 20) {
+          error = true;
+          errors.push("Firstname must be no longer than 20 characters")
+        }
+        if (lname.length > 20) {
+          error = true;
+          errors.push("Lastname must be no longer than 20 characters")
+        }
+        if (emailin.length > 40) {
+          error = true;
+          errors.push("Email must be no longer than 40 characters")
+        }
+        if (error) {
+          htmlStr = "";
+          var i;
+          for (i = 0; i < errors.length; ++i) {
+              htmlStr += "<p class='error'>"+errors[i]+"</p>";
+          }
+          $("#errors").html(htmlStr);
+        } else {
+          var data = {
+            username: uname.value,
+            firstname: fname.value,
+            lastname: lname.value,
+            password1: passw1.value,
+            password2: passw2.value,
+            email: emailin.value
+          }
+          console.log(data)
+          $.ajax({
+          	type: "PUT",
+          	contentType: "application/json; charset=UTF-8",
+          	data: JSON.stringify(data),
+          	url: "{{url_for('api.userApi')}}",
+          	success: function(data) {
+              $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=UTF-8",
+                data: {},
+                url: "{{url_for('api.userApi')}}",
+                success: function(newdata) {
+                  document.getElementById( "update_firstname_input" ).value = newdata['firstname'];
+                  document.getElementById( "update_lastname_input" ).value = newdata['lastname'];
+                  document.getElementById( "update_email_input" ).value = newdata['email'];
+                },
+                error: function(error) {
+                  console.log("Didn't work... :c");
+                }
+              });
+            },
+          	error: function(error) {
+
+              console.log("Didn't work... :c");
+              console.log(error);
+            }
+          });
+
+        }
+
+     });
+   });
+
+  </script>
+  <div id="errors"></div>
+  <form id="update_user" method='POST'>
+      <label> {{session.username}} </label>
+      <input type="hidden" id="update_username_input" value="{{session.username}}"></input>
+      <br> </br>
+      <label> Firstname </label>
+      <input id="update_firstname_input" type="text" name="firstname">
+      <br> </br>
+      <label> Lastname </label>
+      <input id="update_lastname_input" type="text" name="lastname">
+      <br> </br>
+      <label> Password1 </label>
+      <input id="update_password1_input" type="password" name="password1">
+      <br> </br>
+      <label> Password2 </label>
+      <input id="update_password2_input" type="password" name="password2">
+      <br> </br>
+      <label> Email </label>
+      <input id="update_email_input" type="text" name="email">
+      <br> </br>
+      <label> Submit </label>
+      <input id="update_submit" type="submit" value="Submit"><br>
+  </form>
+</div>
+
+
+{% endblock %}

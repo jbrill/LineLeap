@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+   <h2>Albums</h2>
+    {% if edit %}
+      <div>
+        <table class="pure-table pure-table-horizontal">
+          {% for album in albums %}
+            <tr>
+              <td id="title_{{album["title"]}}">{{album["title"]}}</td>
+              <td>
+                <a class="pure-button" id="album_edit_{{album["albumid"]}}_link" href="{{url_for('album.album_edit_route', albumid=album["albumid"])}}">EDIT</a>
+              </td>
+              <td>
+                <form class="pure-form" action={{url_for('albums.albums_edit_route', username=username)}} method="post">
+                  <input type="hidden" name="albumid" value={{album["albumid"]}}>
+                  <input type="hidden" name="op" value="delete">
+                  <input id="delete_album_{{album["albumid"]}}" type="submit" value="Delete">
+                </form>
+              </td>
+            </tr>
+          {% endfor %}
+          <tr>
+            <td>
+              Add:
+            </td>
+            <td>
+            </td>
+            <td>
+              <form class="pure-form" action={{url_for('albums.albums_edit_route', username=username)}} method="post">
+                <input type="hidden" name="op" value="add">
+                <input type="hidden" name="username" value={{username}}>
+                <input id="album_add_name" type="text" name="title">
+                <input id="album_add_submit" type="submit" value="Submit">
+              </form>
+            </td>
+          </tr>
+        </table>
+      </div>
+    {% else %}
+      {% if owner %}
+
+          <div class="edit_div" id="user_edit_div">
+            <a class="pure-button" id="user_albums_edit_{{username}}" href ={{url_for('albums.albums_edit_route')}}>EDIT</a>
+          </div>
+        <br>
+
+      {% endif %}
+      {% for album in albums %}
+        <div id = {{username}}></div>
+        <div>
+          <a id="album_{{album["albumid"]}}_link" href={{url_for('album.album_route', albumid=album["albumid"])}}>{{album["title"]}}</a>
+        </div>
+
+      {% endfor %}
+    {% endif %}
+{% endblock %}

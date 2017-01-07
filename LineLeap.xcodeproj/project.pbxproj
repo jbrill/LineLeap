@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0073251E2015CC00B4B15A /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0073241E2015CC00B4B15A /* UserController.swift */; };
+		FA0073281E20175F00B4B15A /* NearbyMeetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0073261E20175F00B4B15A /* NearbyMeetingCell.swift */; };
+		FA0073291E20175F00B4B15A /* NearbyMeetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0073271E20175F00B4B15A /* NearbyMeetingCell.xib */; };
+		FA00732B1E2018F000B4B15A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA00732A1E2018F000B4B15A /* User.swift */; };
 		FA3FC1CE1DFDDC27003E9D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC1CD1DFDDC27003E9D4A /* AppDelegate.swift */; };
 		FA3FC1D01DFDDC27003E9D4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC1CF1DFDDC27003E9D4A /* ViewController.swift */; };
 		FA3FC1D31DFDDC27003E9D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3FC1D11DFDDC27003E9D4A /* Main.storyboard */; };
 		FA3FC1D61DFDDC27003E9D4A /* LineLeap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC1D41DFDDC27003E9D4A /* LineLeap.xcdatamodeld */; };
 		FA3FC1D81DFDDC27003E9D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3FC1D71DFDDC27003E9D4A /* Assets.xcassets */; };
 		FA3FC1DB1DFDDC27003E9D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3FC1D91DFDDC27003E9D4A /* LaunchScreen.storyboard */; };
+		FA53FD8D1E21908D00B2C6D6 /* MeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53FD8B1E21908D00B2C6D6 /* MeetingViewController.swift */; };
+		FA53FD8E1E21908D00B2C6D6 /* MeetingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA53FD8C1E21908D00B2C6D6 /* MeetingViewController.xib */; };
+		FA53FD901E21A19800B2C6D6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53FD8F1E21A19800B2C6D6 /* Extensions.swift */; };
+		FA53FD921E21A77900B2C6D6 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53FD911E21A77900B2C6D6 /* Bar.swift */; };
+		FA53FD941E21AC4D00B2C6D6 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53FD931E21AC4D00B2C6D6 /* Ticket.swift */; };
+		FA6CFB7B1E1D84FF00C5AD63 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CFB7A1E1D84FF00C5AD63 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0073241E2015CC00B4B15A /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		FA0073261E20175F00B4B15A /* NearbyMeetingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyMeetingCell.swift; sourceTree = "<group>"; };
+		FA0073271E20175F00B4B15A /* NearbyMeetingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyMeetingCell.xib; sourceTree = "<group>"; };
+		FA00732A1E2018F000B4B15A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA3FC1CA1DFDDC27003E9D4A /* LineLeap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineLeap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3FC1CD1DFDDC27003E9D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3FC1CF1DFDDC27003E9D4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +38,12 @@
 		FA3FC1D71DFDDC27003E9D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3FC1DA1DFDDC27003E9D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3FC1DC1DFDDC27003E9D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA53FD8B1E21908D00B2C6D6 /* MeetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingViewController.swift; sourceTree = "<group>"; };
+		FA53FD8C1E21908D00B2C6D6 /* MeetingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeetingViewController.xib; sourceTree = "<group>"; };
+		FA53FD8F1E21A19800B2C6D6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA53FD911E21A77900B2C6D6 /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		FA53FD931E21AC4D00B2C6D6 /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		FA6CFB7A1E1D84FF00C5AD63 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +77,22 @@
 			isa = PBXGroup;
 			children = (
 				FA3FC1CD1DFDDC27003E9D4A /* AppDelegate.swift */,
+				FA6CFB7A1E1D84FF00C5AD63 /* Colors.swift */,
 				FA3FC1CF1DFDDC27003E9D4A /* ViewController.swift */,
 				FA3FC1D11DFDDC27003E9D4A /* Main.storyboard */,
+				FA53FD8B1E21908D00B2C6D6 /* MeetingViewController.swift */,
+				FA53FD8C1E21908D00B2C6D6 /* MeetingViewController.xib */,
+				FA0073261E20175F00B4B15A /* NearbyMeetingCell.swift */,
+				FA0073271E20175F00B4B15A /* NearbyMeetingCell.xib */,
 				FA3FC1D71DFDDC27003E9D4A /* Assets.xcassets */,
 				FA3FC1D91DFDDC27003E9D4A /* LaunchScreen.storyboard */,
 				FA3FC1DC1DFDDC27003E9D4A /* Info.plist */,
 				FA3FC1D41DFDDC27003E9D4A /* LineLeap.xcdatamodeld */,
+				FA53FD8F1E21A19800B2C6D6 /* Extensions.swift */,
+				FA0073241E2015CC00B4B15A /* UserController.swift */,
+				FA00732A1E2018F000B4B15A /* User.swift */,
+				FA53FD931E21AC4D00B2C6D6 /* Ticket.swift */,
+				FA53FD911E21A77900B2C6D6 /* Bar.swift */,
 			);
 			path = LineLeap;
 			sourceTree = "<group>";
@@ -94,11 +124,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = LineLeap;
 				TargetAttributes = {
 					FA3FC1C91DFDDC27003E9D4A = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6ADK7Y8S57;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3FC1DB1DFDDC27003E9D4A /* LaunchScreen.storyboard in Resources */,
+				FA53FD8E1E21908D00B2C6D6 /* MeetingViewController.xib in Resources */,
+				FA0073291E20175F00B4B15A /* NearbyMeetingCell.xib in Resources */,
 				FA3FC1D81DFDDC27003E9D4A /* Assets.xcassets in Resources */,
 				FA3FC1D31DFDDC27003E9D4A /* Main.storyboard in Resources */,
 			);
@@ -139,9 +172,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA53FD941E21AC4D00B2C6D6 /* Ticket.swift in Sources */,
 				FA3FC1D01DFDDC27003E9D4A /* ViewController.swift in Sources */,
+				FA53FD901E21A19800B2C6D6 /* Extensions.swift in Sources */,
+				FA6CFB7B1E1D84FF00C5AD63 /* Colors.swift in Sources */,
+				FA0073251E2015CC00B4B15A /* UserController.swift in Sources */,
 				FA3FC1CE1DFDDC27003E9D4A /* AppDelegate.swift in Sources */,
+				FA53FD921E21A77900B2C6D6 /* Bar.swift in Sources */,
+				FA0073281E20175F00B4B15A /* NearbyMeetingCell.swift in Sources */,
 				FA3FC1D61DFDDC27003E9D4A /* LineLeap.xcdatamodeld in Sources */,
+				FA53FD8D1E21908D00B2C6D6 /* MeetingViewController.swift in Sources */,
+				FA00732B1E2018F000B4B15A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +226,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -235,6 +277,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -264,7 +307,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6ADK7Y8S57;
 				INFOPLIST_FILE = LineLeap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.LineLeap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +323,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6ADK7Y8S57;
 				INFOPLIST_FILE = LineLeap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.LineLeap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +354,7 @@
 				FA3FC1E11DFDDC27003E9D4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
