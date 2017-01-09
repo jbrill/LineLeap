@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.hideKeyboardWhenTappedAround()
+        
         EmailTextField.layer.borderColor = UIColor.c1().cgColor
         PasswordTestField.layer.borderColor = UIColor.c1().cgColor
 
@@ -32,6 +34,8 @@ class ViewController: UIViewController {
 //        
 //        PasswordTestField.leftViewMode = UITextFieldViewMode.always
 //        PasswordTestField.leftView = spacerView
+        PasswordTestField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
+        EmailTextField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
         
         navigationController?.navigationBar.barTintColor = UIColor.c2()
         

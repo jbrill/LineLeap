@@ -1,37 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>Index</h2>
-    <p>
-    This website is a picture database that allows users to create, edit, and destroy pictures and the albums they store them in. The pictures each user owns may be accessed by clicking on the username and then looking through their albums.
-    </p>
-    <br></br>
-
-    <div id=users class=main>
     <u><big>Users:</big></u></p>
-    {% for user in users %}
-    <div id={{user["username"]}}>
-      <div class="user_holder" id={{user["username"]}}>
-        <div id="user_view">
-            <a id="user_albums_{{user.username}}" href="{{url_for('albums.albums_route', username=user["username"])}}"><button>{{user["username"]}}</button></a>
-        </div>
+    {% for bar in bars %}
+    <div id={{bar["barname"]}}>
+      <div class="bar_holder" id={{bar["barname"]}}>
+        <!--ADD BAR STUFF-->
       </div>
-
-    {% endfor %}
     </div>
-
-    <div id=albums class=main>
-    <u><big>Albums:</big></u></p>
-    {% for album in albums %}
-      <div class="album_holder" id={{album["title"]}}>
-        <div id="album_view">
-
-            <a id="album_{{album.albumid}}_link" href="{{url_for('album.album_route', albumid=album["albumid"])}}"><button>{{album["title"]}}</button></a>
-
-        </div>
-      </div>
-
     {% endfor %}
-    </div>
-
-
 {% endblock %}

@@ -9,7 +9,13 @@
 import UIKit
 
 class NearbyMeetingCell: UITableViewCell {
+    @IBOutlet weak var price: UILabel!
 
+    @IBOutlet weak var barPicture: UIImageView!
+    @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var barTitle: UILabel!
+    @IBOutlet weak var distance: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +27,7 @@ class NearbyMeetingCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func BarClicked(_ sender: Any) {
+        
+    }
 }
