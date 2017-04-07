@@ -22,8 +22,8 @@
 		FA53FD901E21A19800B2C6D6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53FD8F1E21A19800B2C6D6 /* Extensions.swift */; };
 		FA53FD921E21A77900B2C6D6 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53FD911E21A77900B2C6D6 /* Bar.swift */; };
 		FA53FD941E21AC4D00B2C6D6 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53FD931E21AC4D00B2C6D6 /* Ticket.swift */; };
-		FA53FD961E232ECA00B2C6D6 /* RegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA53FD951E232ECA00B2C6D6 /* RegisterController.xib */; };
-		FA53FD981E232EF300B2C6D6 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53FD971E232EF300B2C6D6 /* RegisterController.swift */; };
+		FA53FD9B1E24666F00B2C6D6 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53FD991E24666F00B2C6D6 /* RegisterController.swift */; };
+		FA53FD9C1E24666F00B2C6D6 /* RegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA53FD9A1E24666F00B2C6D6 /* RegisterController.xib */; };
 		FA6CFB7B1E1D84FF00C5AD63 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CFB7A1E1D84FF00C5AD63 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +45,8 @@
 		FA53FD8F1E21A19800B2C6D6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FA53FD911E21A77900B2C6D6 /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 		FA53FD931E21AC4D00B2C6D6 /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
-		FA53FD951E232ECA00B2C6D6 /* RegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterController.xib; sourceTree = "<group>"; };
-		FA53FD971E232EF300B2C6D6 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		FA53FD991E24666F00B2C6D6 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		FA53FD9A1E24666F00B2C6D6 /* RegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterController.xib; sourceTree = "<group>"; };
 		FA6CFB7A1E1D84FF00C5AD63 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,8 +86,8 @@
 				FA3FC1D11DFDDC27003E9D4A /* Main.storyboard */,
 				FA53FD8B1E21908D00B2C6D6 /* MeetingViewController.swift */,
 				FA53FD8C1E21908D00B2C6D6 /* MeetingViewController.xib */,
-				FA53FD971E232EF300B2C6D6 /* RegisterController.swift */,
-				FA53FD951E232ECA00B2C6D6 /* RegisterController.xib */,
+				FA53FD991E24666F00B2C6D6 /* RegisterController.swift */,
+				FA53FD9A1E24666F00B2C6D6 /* RegisterController.xib */,
 				FA0073261E20175F00B4B15A /* NearbyMeetingCell.swift */,
 				FA0073271E20175F00B4B15A /* NearbyMeetingCell.xib */,
 				FA3FC1D71DFDDC27003E9D4A /* Assets.xcassets */,
@@ -165,7 +165,7 @@
 			files = (
 				FA3FC1DB1DFDDC27003E9D4A /* LaunchScreen.storyboard in Resources */,
 				FA53FD8E1E21908D00B2C6D6 /* MeetingViewController.xib in Resources */,
-				FA53FD961E232ECA00B2C6D6 /* RegisterController.xib in Resources */,
+				FA53FD9C1E24666F00B2C6D6 /* RegisterController.xib in Resources */,
 				FA0073291E20175F00B4B15A /* NearbyMeetingCell.xib in Resources */,
 				FA3FC1D81DFDDC27003E9D4A /* Assets.xcassets in Resources */,
 				FA3FC1D31DFDDC27003E9D4A /* Main.storyboard in Resources */,
@@ -187,7 +187,7 @@
 				FA3FC1CE1DFDDC27003E9D4A /* AppDelegate.swift in Sources */,
 				FA53FD921E21A77900B2C6D6 /* Bar.swift in Sources */,
 				FA0073281E20175F00B4B15A /* NearbyMeetingCell.swift in Sources */,
-				FA53FD981E232EF300B2C6D6 /* RegisterController.swift in Sources */,
+				FA53FD9B1E24666F00B2C6D6 /* RegisterController.swift in Sources */,
 				FA3FC1D61DFDDC27003E9D4A /* LineLeap.xcdatamodeld in Sources */,
 				FA53FD8D1E21908D00B2C6D6 /* MeetingViewController.swift in Sources */,
 				FA00732B1E2018F000B4B15A /* User.swift in Sources */,

@@ -9,22 +9,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LineLeap/ViewController.swift"
-            timestampString = "505622664.850351"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "LineLeap/User.swift"
             timestampString = "505523306.863476"
             startingColumnNumber = "9223372036854775807"
@@ -33,6 +17,129 @@
             endingLineNumber = "17"
             landmarkName = "User"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LineLeap/MeetingViewController.swift"
+            timestampString = "505701054.53435"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "MeetingViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LineLeap.MeetingViewController.__deallocating_deinit"
+                  moduleName = "LineLeap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonbrill/Documents/LineLeap/LineLeap/LineLeap/MeetingViewController.swift"
+                  timestampString = "505701054.60321"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LineLeap.MeetingViewController.init (style : __C.UITableViewStyle) -&gt; LineLeap.MeetingViewController"
+                  moduleName = "LineLeap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonbrill/Documents/LineLeap/LineLeap/LineLeap/MeetingViewController.swift"
+                  timestampString = "505701054.605716"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LineLeap.MeetingViewController.__allocating_init (style : __C.UITableViewStyle) -&gt; LineLeap.MeetingViewController"
+                  moduleName = "LineLeap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonbrill/Documents/LineLeap/LineLeap/LineLeap/MeetingViewController.swift"
+                  timestampString = "505701054.607455"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LineLeap.MeetingViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; LineLeap.MeetingViewController"
+                  moduleName = "LineLeap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonbrill/Documents/LineLeap/LineLeap/LineLeap/MeetingViewController.swift"
+                  timestampString = "505701054.608979"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LineLeap.MeetingViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; LineLeap.MeetingViewController"
+                  moduleName = "LineLeap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonbrill/Documents/LineLeap/LineLeap/LineLeap/MeetingViewController.swift"
+                  timestampString = "505701054.610304"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LineLeap.MeetingViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;LineLeap.MeetingViewController&gt;"
+                  moduleName = "LineLeap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonbrill/Documents/LineLeap/LineLeap/LineLeap/MeetingViewController.swift"
+                  timestampString = "505701054.6116"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LineLeap.MeetingViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;LineLeap.MeetingViewController&gt;"
+                  moduleName = "LineLeap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonbrill/Documents/LineLeap/LineLeap/LineLeap/MeetingViewController.swift"
+                  timestampString = "505701054.613497"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

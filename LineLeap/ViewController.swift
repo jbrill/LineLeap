@@ -59,7 +59,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func RegisterTapped(_ sender: UIButton) {
-        print("HERE FOR REGISTER")
+        let register = RegisterController(nibName: "RegisterController", bundle: nil)
+        self.navigationController?.pushViewController(register, animated: true)
+    }
+    
+    @IBAction func ForgotPass(_ sender: Any) {
     }
 }
 

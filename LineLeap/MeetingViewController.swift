@@ -9,7 +9,10 @@
 import UIKit
 
 class MeetingViewController: UITableViewController {
-        
+//    let tickets:[Ticket] = []
+//    let b1:Bar = Bar(nameIn: Scorekeepers Bar and Grille, emailIn: skeeps@lineleap.co, baridIn: 15245, photoIn: <#T##UIImage#>)
+//    let t1:Ticket = Ticket(priceIn: 30, barIn: <#T##Bar#>, tidIn: <#T##String#>)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

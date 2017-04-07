@@ -14,10 +14,13 @@
   <body>
     <header>
       {% if 'username' in session %}
-
+        <div id="view_bars">
+          <!--Should redirect-->
+        </div>
       {% endif %}
       {% if 'username' not in session %}
-
+        <div id="login">
+        </div>
       {% endif %}
     </header>
     <div id= "footer_holder">

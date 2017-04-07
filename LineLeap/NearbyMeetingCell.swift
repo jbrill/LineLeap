@@ -19,6 +19,15 @@ class NearbyMeetingCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        let str = NSAttributedString(string: "$30", attributes: [
+            NSForegroundColorAttributeName : UIColor.c1(),
+            NSStrokeColorAttributeName : UIColor.black,
+            NSStrokeWidthAttributeName : -1,
+            NSFontAttributeName : UIFont.systemFont(ofSize: 60.0)
+            ])
+        
+        barTitle.attributedText = str
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
